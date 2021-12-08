@@ -39,7 +39,7 @@ try {
 
   //修改README.md中文章目录
   console.log('修改README.md中')
-  const githubUrl = 'https://github.com/a86861636/mdBlog/tree/main'
+  const githubUrl = 'https://github.com/a86861636/mdBlog/blob/main/article'
   const mdFile = fs.readFileSync('./README.md')
   const mdFileStr = mdFile.toString()
   let oldMenuStr = mdFileStr.match(`<!-- 目录 start -->([\\s\\S]*?)<!-- 目录 end -->`)[1]
